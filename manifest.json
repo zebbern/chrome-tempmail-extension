@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "TempMail Pro",
-  "version": "1.0.0",
-  "description": "Create and manage temporary email addresses from multiple services",
+  "version": "1.6.4",
+  "description": "Create and manage temporary email addresses from multiple services made by github.com/zebbern",
   "permissions": [
     "storage",
     "alarms",
