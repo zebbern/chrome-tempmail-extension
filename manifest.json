@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "TempMail Pro",
+  "version": "1.0.0",
+  "description": "Create and manage temporary email addresses from multiple services",
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://api.guerrillamail.com/*",
+    "https://dropmail.me/*",
+    "https://api.mail.gw/*",
+    "https://api.mail.tm/*",
+    "https://api.tempmail.lol/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}
