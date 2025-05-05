@@ -3,6 +3,15 @@
 
 ![temp-zebbern](https://github.com/user-attachments/assets/af783c73-d7d5-4af2-aeae-85ff5b279952)
 
+
+## Installation
+
+1. Put <kbd>chrome://extensions</kbd> **in your address bar**  
+2. **Enable** <kbd>Developer mode</kbd> (toggle in the top right)  
+3. **Click** <kbd>Load unpacked</kbd>  
+4. **Select the extension folder** (the directory containing your `manifest.json`)  
+5. **The extension will now appear in your toolbar**
+
 ## Features
 
 - Create disposable email addresses instantly
