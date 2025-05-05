@@ -1,15 +1,15 @@
-## TempMail Pro for Firefox 
-> Extension to generate and manage temp emails using multiple providers. Designed to help you create, view, and copy temp-mail addresses without losing access mid-session.
+## TempMail Pro for Chrome 
+> Chrome Extension to generate and manage temp emails using multiple providers. Designed to help you create, view, and copy temp-mail addresses without losing access mid-session.
 
 ![temp-zebbern](https://github.com/user-attachments/assets/af783c73-d7d5-4af2-aeae-85ff5b279952)
 
 
 ## Installation
 
-1. Put <kbd>about:debugging#/runtime/this-firefox</kbd> **in your address bar**
-2. **Select <kbd>This Firefox</kbd> from the left sidebar**
-3. **Click <kbd>Load Temporary Add-on...</kbd>**
-4. **Select the downloaded ZIP file** (or the manifest.json file directly)
+1. Put <kbd>chrome://extensions</kbd> **in your address bar**  
+2. **Enable** <kbd>Developer mode</kbd> (toggle in the top right)  
+3. **Click** <kbd>Load unpacked</kbd>  
+4. **Select the extension folder** (the directory containing your `manifest.json`)  
 5. **The extension will now appear in your toolbar**
 
 ## Features
