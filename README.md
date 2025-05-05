@@ -6,10 +6,10 @@
 
 ## Installation
 
-1. Put <kbd>chrome://extensions</kbd> **in your address bar**  
-2. **Enable** <kbd>Developer mode</kbd> (toggle in the top right)  
-3. **Click** <kbd>Load unpacked</kbd>  
-4. **Select the extension folder** (the directory containing your `manifest.json`)  
+1. Put <kbd>about:debugging#/runtime/this-firefox</kbd> **in your address bar**
+2. **Select <kbd>This Firefox</kbd> from the left sidebar**
+3. **Click <kbd>Load Temporary Add-on...</kbd>**
+4. **Select the downloaded ZIP file** (or the manifest.json file directly)
 5. **The extension will now appear in your toolbar**
 
 ## Features
