@@ -1,0 +1,356 @@
+/* TempMail Pro - CSS inspired by the PyQt dark theme */
+:root {
+    --bg-main: #0a0b0f;
+    --bg-container: #1a1e25;
+    --bg-email-item: #1e2227;
+    --bg-list: #161a20;
+    --bg-tab-active: #1f97b6;
+    --border-light: rgba(255, 255, 255, 0.1);
+    --button-bg: linear-gradient(to bottom, #1f97b6, #178ab8);
+    --button-hover: linear-gradient(to bottom, #17a2d8, #1f97b6);
+    --button-active: #156c87;
+    --text-color: #ffffff;
+    --highlight-color: #1f97b6;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: var(--bg-main);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .main-container {
+    background: var(--bg-container);
+    border-radius: 8px;
+    padding: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Toolbar styles */
+  .toolbar {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 6px;
+    margin-bottom: 6px;
+  }
+  
+  .service-combo, .domain-combo, .refresh-combo {
+    background: var(--bg-list);
+    color: var(--text-color);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 4px;
+  }
+  
+  .service-combo {
+    min-width: 130px;
+  }
+  
+  .domain-combo {
+    min-width: 130px;
+  }
+  
+  .refresh-combo {
+    min-width: 60px;
+  }
+  
+  .button {
+    background: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+  
+  .button:hover {
+    background: var(--button-hover);
+  }
+  
+  .button:active {
+    background: var(--button-active);
+  }
+  
+  .spacer {
+    flex-grow: 1;
+  }
+  
+  /* Stack layout */
+  .stack-container {
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Lists */
+  .list {
+    flex-grow: 1;
+    overflow-y: auto;
+    background: var(--bg-list);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 6px;
+  }
+  
+  /* Email item */
+  .email-item {
+    background: var(--bg-email-item);
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .email-item:hover {
+    /* 4. Hex with alpha (20% opacity) */
+    background-color: #e0f7ff33;
+  }
+  
+  .email-item-text {
+    flex-grow: 1;
+  }
+  
+  .email-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  
+  .email-address {
+    font-size: 10pt;
+    margin-right: 6px;
+  }
+  
+  .service-badge {
+    background: var(--highlight-color);
+    color: var(--text-color);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 8pt;
+  }
+  
+  .email-info {
+    display: flex;
+    align-items: center;
+    font-size: 8pt;
+  }
+  
+  .count-badge {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 2px;
+    padding: 2px 6px;
+    width: 70px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  .count-badge.has-mail {
+    color: var(--highlight-color);
+    font-weight: bold;
+  }
+  
+  .timer {
+    color: var(--highlight-color);
+    width: 80px;
+    text-align: center;
+  }
+  
+  .timer.warning {
+    color: #ffc107;
+    font-weight: bold;
+  }
+  
+  .timer.danger {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  .copy-btn {
+    background: #294560;
+    border: 1px solid var(--highlight-color);
+    border-radius: 1px;
+    color: var(--text-color);
+    padding: 0;
+    font-size: 12px;
+    width: 50px;
+    height: 24px;
+    margin-right: 4px;
+  }
+  
+  .copy-btn:hover {
+    background: var(--highlight-color);
+  }
+  
+  .delete-btn {
+    background: #7c2328;
+    height: 22px;
+    border: 1px solid #dc3545;
+    border-radius: 2px;
+    color: var(--text-color);
+    padding: 0;
+    font-size: 13px;
+    width: 25px;
+  }
+  
+  .delete-btn:hover {
+    background: #dc3545;
+  }
+  
+  /* Page header */
+  .page-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  
+  /* Message item */
+  .message-item {
+    border-bottom: 1px solid var(--border-light);
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .message-item:hover {
+    background: rgba(31, 151, 182, 0.1);
+  }
+  
+  .message-item.selected {
+    background: rgba(31, 151, 182, 0.2);
+  }
+  
+  .message-subject {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .message-meta {
+    font-size: 8pt;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Tabs */
+  .tabs {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    margin-bottom: 6px;
+  }
+  
+  .tab-btn {
+    background: var(--bg-list);
+    color: var(--text-color);
+    border: 1px solid var(--border-light);
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+  }
+  
+  .tab-btn.active {
+    background: var(--highlight-color);
+    border-bottom: 2px solid #17a2d8;
+  }
+  
+  .tab-content {
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  .tab-pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-list);
+    color: var(--text-color);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 6px;
+    overflow: auto;
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+  
+  #html-view {
+    background: var(--bg-list);
+  }
+  
+  #raw-view {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 12px;
+  }
+  
+  /* Status bar */
+  .status-bar {
+    height: 24px;
+    background: var(--bg-list);
+    color: var(--text-color);
+    padding: 3px 8px;
+    font-size: 11px;
+    border-radius: 0 0 8px 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Message view styling */
+  .message-header {
+    margin-bottom: 12px;
+  }
+  
+  .message-header h3 {
+    margin: 8px 0;
+    color: white;
+  }
+  
+  .message-header p {
+    margin: 6px 0;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .message-header hr {
+    border-color: #333;
+  }
+
+  

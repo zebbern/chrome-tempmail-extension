@@ -3,24 +3,14 @@
 
 ![temp-zebbern](https://github.com/user-attachments/assets/af783c73-d7d5-4af2-aeae-85ff5b279952)
 
+
 ## Installation
 
-### From Chrome Web Store (Recommended)
-*Coming Soon!* This extension will be available on the Chrome Web Store for easy installation.
-
-### Manual Installation (Developer Mode)
 1. Put <kbd>chrome://extensions</kbd> **in your address bar**  
 2. **Enable** <kbd>Developer mode</kbd> (toggle in the top right)  
 3. **Click** <kbd>Load unpacked</kbd>  
 4. **Select the extension folder** (the directory containing your `manifest.json`)  
 5. **The extension will now appear in your toolbar**
-
-### Building for Chrome Web Store
-To create a package ready for Chrome Web Store submission:
-```bash
-./build-chrome-store.sh
-```
-This creates `tempmail-pro-chrome-store.zip` ready for upload to the Chrome Web Store Developer Dashboard.
 
 ## Features
 
@@ -43,16 +33,5 @@ For developers interested in contributing or customizing this extension:
 - Written in vanilla JavaScript
 - Uses browser.storage for persistence
 - Handles multiple API implementations for different providers
-
-### Chrome Web Store Submission
-See [DEVELOPER_INFO.md](DEVELOPER_INFO.md) for complete instructions on publishing to the Chrome Web Store.
-
-### Privacy & Security
-This extension prioritizes user privacy:
-- All data stored locally in your browser
-- No personal information collected
-- No tracking or analytics
-- Open source for transparency
-- See [PRIVACY_POLICY.md](PRIVACY_POLICY.md) for details
 
 *Created by github.com/zebbern*
