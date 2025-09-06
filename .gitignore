@@ -1,0 +1,28 @@
+# Chrome Web Store build artifacts
+chrome-store-package/
+tempmail-pro-chrome-store.zip
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Node.js (if used for development)
+node_modules/
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/
